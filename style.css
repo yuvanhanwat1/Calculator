@@ -1,0 +1,62 @@
+h1 {
+    text-shadow: 2px 2px 1px grey;
+    font-style: oblique;
+    font-weight: 800;
+    padding: 2px;
+    width: 380px;
+    border-radius: 13px;
+    box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px grey;
+}
+
+#display {
+    text-align: right;
+    margin: 20px 10px 20px 10px;
+    width: 340px;
+    border-radius: 13px;
+    box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+}
+
+.details {
+    background: rgb(200, 200, 200);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 30px;
+    font-family: bold;
+    width: 70px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 3px grey, -5px -5px 3px white;
+    background: rgb(200, 200, 200);
+    outline: none;
+}
+
+h2 {
+    text-shadow: 2px 2px 1px GREY;
+    font-style: oblique;
+    padding: 2px;
+    font-weight: 600;
+    width: 380px;
+    border-radius: 13px;
+    box-shadow: inset 3px 3px 1px grey, inset -3px -3px 1px grey;
+
+}
+
+h1:hover {
+    text-shadow: 2px 2px 1px gray;
+    box-shadow: inset 5px 5px 3px black, inset -5px -5px 3px black;
+}
+
+input:hover {
+    box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+}
+
+h2:hover {
+    box-shadow: inset 3px 3px 1px black, inset -3px -3px 1px black;
+}
