@@ -1,0 +1,117 @@
+<!--Calculator using HTNL and CSS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        h1 {
+            text-shadow: 2px 2px 1px grey;
+            font-style: oblique;
+            font-weight: 800;
+            padding: 2px;
+            width: 380px;
+            border-radius: 13px;
+            box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px grey;
+        }
+
+        #display {
+            text-align: right;
+            margin: 20px 10px 20px 10px;
+            width: 340px;
+            border-radius: 13px;
+            box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+        }
+
+        .details {
+            background: rgb(200, 200, 200);
+            padding: 10px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+        input {
+            font-size: 30px;
+            font-family: bold;
+            width: 70px;
+            height: 60px;
+            margin: 8px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 5px 5px 3px grey, -5px -5px 3px white;
+            background: rgb(200, 200, 200);
+            outline: none;
+        }
+
+        h2 {
+            text-shadow: 2px 2px 1px GREY;
+            font-style: oblique;
+            padding: 2px;
+            font-weight: 600;
+            width: 380px;
+            border-radius: 13px;
+            box-shadow: inset 3px 3px 1px grey, inset -3px -3px 1px grey;
+
+        }
+
+        h1:hover {
+            text-shadow: 2px 2px 1px gray;
+            box-shadow: inset 5px 5px 3px black, inset -5px -5px 3px black;
+        }
+
+        input:hover {
+            box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px white;
+        }
+
+        h2:hover {
+            box-shadow: inset 3px 3px 1px black, inset -3px -3px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>CALCULATOR</h1>
+        <div class="details">
+            <form name="forms">
+                <div class="calc">
+                    <input type="text" name="screen" id="display" placeholder="0" readonly>
+                    <br>
+                    <input type="button" value=" AC " onclick="forms.screen.value =''">
+                    <input type="button" value="DEL"
+                        onclick="forms.screen.value = forms.screen.value.substr(0, forms.screen.value.length -1)">
+                    <input type="button" value=" % " onclick="forms.screen.value+='%'">
+                    <input type="button" value=" / " onclick="forms.screen.value+='/'">
+                    <br>
+                    <input type="button" value=" 1 " onclick="forms.screen.value+='1'">
+                    <input type="button" value=" 2 " onclick="forms.screen.value+='2'">
+                    <input type="button" value=" 3 " onclick="forms.screen.value+='3'">
+                    <input type="button" value=" * " onclick="forms.screen.value+='*'">
+                    <br>
+                    <input type="button" value=" 4 " onclick="forms.screen.value+='4'">
+                    <input type="button" value=" 5 " onclick="forms.screen.value+='5'">
+                    <input type="button" value=" 6 " onclick="forms.screen.value+='6'">
+                    <input type="button" value=" - " onclick="forms.screen.value+='-'">
+                    <br>
+                    <input type="button" value=" 7 " onclick="forms.screen.value+='7'">
+                    <input type="button" value=" 8 " onclick="forms.screen.value+='8'">
+                    <input type="button" value=" 9 " onclick="forms.screen.value+='9'">
+                    <input type="button" value=" + " onclick="forms.screen.value+='+'">
+                    <br>
+                    <input type="button" value=" 0 " onclick="forms.screen.value+='0'">
+                    <input type="button" value=" 00 " onclick="forms.screen.value+='00'">
+                    <input type="button" value=" . " onclick="forms.screen.value+='.'">
+                    <input type="button" value=" = " onclick="forms.screen.value = eval(forms.screen.value)">
+                    <br>
+                </div>
+            </form>
+        </div>
+        <h2>CREATED BY WEB TUTORIALS </h2>
+    </div>
+</body>
+
+</html>
